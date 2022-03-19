@@ -1,9 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
 
+<main class="px-3">
+
 <script type="text/javascript" src="{{ url_for('static',filename='timer.js')}}"></script>
     
-<h1>Welcome to Tom's Lofi Pomodoro Tool</h1>
+<br>
+<br>
 
 <div class="video">
     <iframe id="ytplayer" type="text/html" width="640" height="360"
@@ -12,10 +15,16 @@
     </iframe>
 </div>
 
+<br>
+
 <div class="timer">
 
-    Session Count Down: <span id="time">05:00</span> minutes
+    Session Count Down: <span id="time">25:00</span> minutes
 
 </div>    
+
+<br>
+
+</main>
 
 {% endblock %}
